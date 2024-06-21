@@ -1,5 +1,6 @@
 node{
-
+    buildName 'Dev - ${BUILD_NUMBER}'
+    buildDescription 'Pipeline Script - Scriptedway'
     def mavenHome = tool name: "maven3.9.7"
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 
