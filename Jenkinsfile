@@ -65,5 +65,11 @@ echo "The Jenkins Home directory is: ${JENKINS_HOME}"
         }
     }
 */
+catch(e){
+    currentBuild.result = "FAILED"
+}
+finally{
+    sendSlackNotifications(currentBuild.result)
+}
 
 }//Node closing
