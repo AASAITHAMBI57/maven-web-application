@@ -65,6 +65,5 @@ echo "The Jenkins Home directory is: ${JENKINS_HOME}"
         }
     }
 */
-}// Try block closing
 
 }//Node closing
